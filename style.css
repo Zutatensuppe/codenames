@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.revealed.bad {
+    color: #252420;
+    background: #646463;
+}
+.revealed.bad .wrapper:before {
+    content: "💀 "
+}
+.revealed.bad .wrapper:after {
+    content: " 💀"
+}
+
+.revealed.own {
+    color: #0c506a;
+    background: #107fa6;
+}
+
+.revealed.enemy {
+    color: #912527;
+    background: #e73c3f;
+}
+
+.revealed.neutral {
+    color: #7b6654;
+    background: #a1856e;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.word {
+    margin: 5px;
+    border: solid 1px black;
+    background: #e4ceb3;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.word.revealed {
+    cursor: default;
+}
+.word.revealed .wrapper {
+    background: transparent;
+    border: solid 1px transparent;
+}
+.word .wrapper {
+    text-transform: uppercase;
+    text-align: center;
+    background: white;
+    border: solid 1px #b09f89;
+    padding: 10px;
+}
